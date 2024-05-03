@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Express</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image:url("background.png");
+    background-size: cover;
+  }
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #e3aeae;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0 0 50px rgb(16, 14, 14);
+  }
+  h2 {
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f06060;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  select {
+    height: 40px;
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #099b1f;
+    color: #eae0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-btn:hover {
+    background-color: #d67c7c;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Fill the Form</h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email"  placeholder="Enter Email Address">
+    </div>
+    <div class="form-group">
+      <label for="mobile">Mobile No:</label>
+      <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile No" required>
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" placeholder="Enter City" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="Enter Address" required>
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+    </div>
+    <div class="form-group">
+      <label for="payment">Payment Option:</label>
+      <select id="payment" name="payment" required>
+        <option value="cash">Cash on Delivery</option>
+        <option value="online">Online Payment</option>
+      </select>
+    </div>
+    
+    <a href="thankyou.html"> <p type="submit" class="submit-btn" style="margin:5px -10px; background-color:rgb(11, 207, 27);text-align:center; text-decoration:none; ">Place The Order</p></a>
+    <a href="home.html"> <p type="text" class="submit-btn" style="margin:5px -10px; background-color:black;text-align:center; text-decoration:none; ">Go To Back</p></a>
+    
+  </form>
+</div>
+</body>
+</html>
